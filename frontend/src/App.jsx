@@ -8,8 +8,8 @@ function App() {
 
   const handleFileChange = (e) => {
     setSelectedFile(e.target.files[0]);
-    setSuccessMessage(""); // Clear success message
-    setErrorMessage(""); // Clear any error message
+    setSuccessMessage(""); 
+    setErrorMessage("");
   };
 
   const handleSubmit = async (e) => {
@@ -29,21 +29,21 @@ function App() {
       });
       const prediction = response.data.prediction;
 
-      // Log prediction to console
+     
       console.log(`Prediction: ${prediction}`);
 
-      // Check if the prediction contains the word "mask"
+     
       if (prediction.toLowerCase().includes("mask")) {
         setSuccessMessage("Mask detected successfully!");
       } else {
         setSuccessMessage("No mask detected.");
       }
 
-      setErrorMessage(""); // Clear any error message on success
+      setErrorMessage(""); 
     } catch (error) {
       console.error("Error:", error.message);
       setErrorMessage("An error occurred while processing the file.");
-      setSuccessMessage(""); // Clear success message on error
+      setSuccessMessage(""); 
     }
   };
 
