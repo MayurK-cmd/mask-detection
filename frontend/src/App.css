@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Alumni+Sans+Pinstripe:ital@0;1&family=Lexend+Deca:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+    background-color: #121212;
+    color: #fff;
+    font-family: 'Lexend Deca', sans-serif;
+    line-height: 1.5;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 3rem;
+    margin-bottom: 20px;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  input[type="file"] {
+    padding: 10px;
+    width: 250px; /* Equal width */
+    margin-bottom: 15px; /* Space between file input and button */
+    background-color: #333;
+    color: #fff;
+    border: 1px solid #555;
+    border-radius: 5px;
+    font-family: 'Lexend Deca', sans-serif;
+  }
+  
+  button {
+    padding: 10px 20px;
+    width: 250px; /* Equal width */
+    background-color: #444;
+    border: 1px solid #555;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 1rem;
+    cursor: pointer;
+    font-family: 'Lexend Deca', sans-serif;
+  }
+  
+  button:hover {
+    background-color: rgb(66, 65, 65);
+  }
+  
+  button:active {
+    background-color: #666;
+  }
+  
+  h3 {
+    margin-top: 15px;
+    font-size: 1.2rem;
+  }
+  
