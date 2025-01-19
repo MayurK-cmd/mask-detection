@@ -6,14 +6,14 @@
 🚀 An IoT-powered model that combines **AI** and **hardware integration** to detect masks and monitor temperature in real time.
 
 ## 📋 Table of Contents
-- [Introduction](#introduction)
-- [Features](#features)
-- [Tech Stack](#tech-stack)
-- [Hardware Components](#hardware-components)
-- [Setup and Installation](#setup-and-installation)
-- [Usage](#usage)
-- [Contributing](#contributing)
-- [License](#license)
+- [Introduction]
+- [Features]
+- [Tech Stack]
+- [Hardware Components]
+- [Setup and Installation]
+- [Usage]
+- [Contributing]
+- [License]
 
 ---
 
@@ -32,16 +32,16 @@ This project integrates **AI-based mask detection** with **IoT temperature sensi
 
 ## 🛠️ Tech Stack
 ### Backend:
-- **FastAPI**: For serving the mask detection API.
-- **Python**: For ML model and API development.
+- FastAPI: For serving the mask detection API.
+- Python: For ML model and API development.
 
 ### Frontend:
-- **React**: For building an interactive user interface.
+- React: For building an interactive user interface.
 
 ### Hardware:
-- **Arduino Uno**: To handle temperature and mask detection inputs.
-- **DHT11 Sensor**: For temperature and humidity sensing.
-- **Ultrasonic Sensor**: For object proximity detection.
+- Arduino Uno: To handle temperature and mask detection inputs.
+- DHT11 Sensor: For temperature and humidity sensing.
+- Ultrasonic Sensor: For object proximity detection.
 
 ---
 
