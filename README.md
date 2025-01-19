@@ -38,7 +38,7 @@ This project integrates **AI-based mask detection** with **IoT temperature sensi
  Frontend:
 - React: For building an interactive user interface.
 
-### Hardware:
+ Hardware:
 - Arduino Uno: To handle temperature and mask detection inputs.
 - DHT11 Sensor: For temperature and humidity sensing.
 - Ultrasonic Sensor: For object proximity detection.
