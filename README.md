@@ -5,7 +5,7 @@
 
 🚀 An IoT-powered model that combines **AI** and **hardware integration** to detect masks and monitor temperature in real time.
 
-## 📋 Table of Contents
+📋 Table of Contents
 - [Introduction]
 - [Features]
 - [Tech Stack]
@@ -17,25 +17,25 @@
 
 ---
 
-## 📝 Introduction
+ 📝 Introduction
 This project integrates **AI-based mask detection** with **IoT temperature sensing** to provide real-time monitoring. Using a transformer model for mask detection and Arduino for hardware interfacing, it offers an intelligent and interactive solution for safety and compliance.
 
 ---
 
-## ✨ Features
-- **Real-time Mask Detection**: Uses a Transformer model for high-accuracy mask detection.
-- **Temperature Monitoring**: Measures temperature and proximity using DHT11 and ultrasonic sensors.
-- **LED Indicators**: Provides feedback via LEDs based on the detection results.
-- **Seamless Integration**: Bridges backend, frontend, and hardware for smooth communication.
+ ✨ Features
+- Real-time Mask Detection: Uses a Transformer model for high-accuracy mask detection.
+- Temperature Monitoring: Measures temperature and proximity using DHT11 and ultrasonic sensors.
+- LED Indicators: Provides feedback via LEDs based on the detection results.
+- Seamless Integration: Bridges backend, frontend, and hardware for smooth communication.
 
 ---
 
-## 🛠️ Tech Stack
-### Backend:
+ 🛠️ Tech Stack
+ Backend:
 - FastAPI: For serving the mask detection API.
 - Python: For ML model and API development.
 
-### Frontend:
+ Frontend:
 - React: For building an interactive user interface.
 
 ### Hardware:
@@ -45,24 +45,24 @@ This project integrates **AI-based mask detection** with **IoT temperature sensi
 
 ---
 
-## 🔌 Hardware Components
-1. **Arduino Uno**
-2. **DHT11 Temperature and Humidity Sensor**
-3. **Ultrasonic Sensor**
-4. **ESP32/ESP8266** (optional for wireless communication)
-5. **LEDs** (for visual indication)
-6. **Breadboard and Jumper Wires**
+ 🔌 Hardware Components
+1. Arduino Uno
+2. DHT11 Temperature and Humidity Sensor
+3. Ultrasonic Sensor
+4. ESP32/ESP8266 (optional for wireless communication)
+5. LEDs (for visual indication)
+6. Breadboard and Jumper Wires
 
 ---
 
-## ⚙️ Setup and Installation
+ ⚙️ Setup and Installation
 
-### Prerequisites:
-- Install **Python 3.10+**
-- Install **Node.js** for the React frontend
+ Prerequisites:
+- Install Python 3.10+
+- Install Node.js for the React frontend
 - Arduino IDE for programming hardware
 
-### Clone the Repository:
+ Clone the Repository:
 ```bash
 git clone https://github.com/your-username/mask-temperature-detection.git
 cd mask-temperature-detection
