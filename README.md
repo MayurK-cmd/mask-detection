@@ -6,23 +6,24 @@
 🚀 An IoT-powered model that combines **AI** and **hardware integration** to detect masks and monitor temperature in real time.
 
 📋 Table of Contents
-- [Introduction]
-- [Features]
-- [Tech Stack]
-- [Hardware Components]
-- [Setup and Installation]
-- [Usage]
-- [Contributing]
-- [License]
+- [Introduction](#-introduction)
+- [Features](#-features)
+- [Tech Stack](#️-tech-stack)
+- [Hardware Components](#-hardware-components)
+- [Setup and Installation](#️-setup-and-installation)
+- [Docker Setup](#-docker-setup)
+- [Usage](#-usage)
+- [Contributing](#-contributing)
+- [License](#-license)
 
 ---
 
- 📝 Introduction
+## 📝 Introduction
 This project integrates **AI-based mask detection** with **IoT temperature sensing** to provide real-time monitoring. Using a transformer model for mask detection and Arduino for hardware interfacing, it offers an intelligent and interactive solution for safety and compliance.
 
 ---
 
- ✨ Features
+## ✨ Features
 - Real-time Mask Detection: Uses a Transformer model for high-accuracy mask detection.
 - Temperature Monitoring: Measures temperature and proximity using DHT11 and ultrasonic sensors.
 - LED Indicators: Provides feedback via LEDs based on the detection results.
@@ -30,22 +31,22 @@ This project integrates **AI-based mask detection** with **IoT temperature sensi
 
 ---
 
- 🛠️ Tech Stack
- Backend:
+## 🛠️ Tech Stack
+### Backend:
 - FastAPI: For serving the mask detection API.
 - Python: For ML model and API development.
 
- Frontend:
+### Frontend:
 - React: For building an interactive user interface.
 
- Hardware:
+### Hardware:
 - Arduino Uno: To handle temperature and mask detection inputs.
 - DHT11 Sensor: For temperature and humidity sensing.
 - Ultrasonic Sensor: For object proximity detection.
 
 ---
 
- 🔌 Hardware Components
+## 🔌 Hardware Components
 1. Arduino Uno
 2. DHT11 Temperature and Humidity Sensor
 3. Ultrasonic Sensor
@@ -55,18 +56,20 @@ This project integrates **AI-based mask detection** with **IoT temperature sensi
 
 ---
 
- ⚙️ Setup and Installation
+## ⚙️ Setup and Installation
 
- Prerequisites:
+### Prerequisites:
 - Install Python 3.10+
 - Install Node.js for the React frontend
 - Arduino IDE for programming hardware
 
- Clone the Repository:
+### Clone the Repository:
 ```bash
 git clone https://github.com/your-username/mask-temperature-detection.git
 cd mask-temperature-detection
 ```
+
+---
 
 ### Backend Setup:
 1. Navigate to the backend folder:
@@ -82,6 +85,8 @@ cd mask-temperature-detection
    uvicorn main:app --reload
    ```
 
+---
+
 ### Frontend Setup:
 1. Navigate to the frontend folder:
    ```bash
@@ -96,6 +101,8 @@ cd mask-temperature-detection
    npm start
    ```
 
+---
+
 ### Arduino Setup:
 1. Open `arduino_code.ino` in Arduino IDE.
 2. Connect the Arduino Uno and upload the code.
@@ -103,9 +110,39 @@ cd mask-temperature-detection
 
 ---
 
+## 🐳 Docker Setup
+
+### Prerequisites:
+- Install Docker and Docker Compose.
+
+### Build and Run the Containers:
+1. Navigate to the project directory.
+
+2. Build the Docker images for backend and frontend:
+   ```bash
+   docker build -t backend ./backend
+   docker build -t frontend ./frontend
+   ```
+
+3. Run the backend container:
+   ```bash
+   docker run -p 8000:8000 backend
+   ```
+
+4. Run the frontend container:
+   ```bash
+   docker run -p 5173:5173 frontend
+   ```
+
+### Access the Application:
+- Backend: Open [http://localhost:8000](http://localhost:8000) in your browser or use an API testing tool like Postman.
+- Frontend: Open [http://localhost:5173](http://localhost:5173) in your browser.
+
+---
+
 ## 🚀 Usage
-1. **Start the Backend**: Run the FastAPI server.
-2. **Start the Frontend**: Open the React application in your browser.
+1. **Start the Backend**: Run the FastAPI server or use the Docker container.
+2. **Start the Frontend**: Run the React application or use the Docker container.
 3. **Connect the Arduino**: Ensure the Arduino is powered and connected to the system.
 4. View mask detection results and temperature readings in real time!
 
@@ -124,5 +161,9 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 ### 📧 Contact
 For any queries or suggestions, feel free to reach out at **mayurgk2006@gmail.com**.
 ```
-css changes
-Feel free to modify the placeholders and tailor the content to your needs. Let me know if you need additional sections or details!
+
+### Changes Added:
+1. Added a **Docker Setup** section with detailed steps for building and running the backend and frontend containers.
+2. Included prerequisite tools for Docker in the **Setup and Installation** section.
+3. Updated the **Usage** section to reference Docker.
+
