@@ -1,0 +1,7 @@
+ fastapi 
+ uvicorn 
+ transformers 
+ Pillow 
+ pyserial
+ torch
+ python-multipart
